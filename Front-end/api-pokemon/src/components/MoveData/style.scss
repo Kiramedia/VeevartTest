@@ -1,0 +1,40 @@
+.o-poke-moves {
+    height: auto;
+    width: 90%;
+    background: var(--complementary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 0.5rem;
+
+    h1{
+        font-size: 1rem;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    h2{
+        font-size: .8rem;
+        margin: .5rem 0;
+    }
+
+    p{
+        font-size: .5rem;
+        margin: .5rem 0;
+    }
+
+    a{
+        font-size: 1.5rem;
+        background: var(--secundary-color);
+        padding: 0.25rem 1rem;
+        border-radius: 0.5rem;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .content{
+        margin: 2rem 0;
+    }
+}

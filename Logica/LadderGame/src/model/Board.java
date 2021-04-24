@@ -25,7 +25,7 @@ public final class Board {
     }
     
     /**
-     * 
+     * Create board objects.
      * @param width horizontal number of cells.
      * @param height vertical number of cells.
      * @return the objects list result that depend of the dimensions.

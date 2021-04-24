@@ -1,0 +1,24 @@
+@import "../../mixin.scss";
+
+.o-logo{
+    display: flex;
+    align-items: center;
+    width: 16%;
+    height: 8rem;
+    overflow: hidden;
+
+    img{
+        height: auto;
+        width: 100%;
+    }
+
+    @include lg{
+        height: 100%;
+        width: 14rem;
+
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+}

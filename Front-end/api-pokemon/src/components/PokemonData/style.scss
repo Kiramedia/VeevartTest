@@ -1,0 +1,60 @@
+@import "../../mixin.scss";
+
+.o-poke-data{
+    width: 48.8rem;
+    height: 35rem;
+    background: url("../../resources/img/PokeData.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 4rem 3rem 7rem 3rem;
+
+    a {
+        font-size: 1.5rem;
+        background: var(--secundary-color);
+        padding: 0.25rem 1rem;
+        border-radius: 0.5rem;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        align-self: center;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 1rem;
+        margin: .5rem 0;
+    }
+
+    p{
+        font-size: .7rem;
+        margin: .5rem 0;
+        text-align: justify;
+    }
+
+    @include md{
+        height: auto;
+        background: var(--complementary-color);
+        padding: 2rem;
+        margin: .5rem;
+
+        h1{
+            font-size: 1rem;
+        }
+    
+        h2{
+            font-size: .8rem;
+        }
+    
+        p{
+            font-size: .5rem;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+//Screen sizes
+$screen-lg: 1200px;
+$screen-md: 800px;
+$screen-sm: 600px;
+
+//Breakpoint small screens
+@mixin sm {
+    @media (max-width: #{$screen-sm}) {
+        @content;
+    }
+}
+//Breakpoint medium screens
+@mixin md {
+    @media (max-width: #{$screen-md}) {
+        @content;
+    }
+}
+//Breakpoint large screens
+@mixin lg {
+    @media (max-width: #{$screen-lg}) {
+        @content;
+    }
+}
+//Free breakpoint, custom screens
+@mixin fbp($screen) {
+    @media (max-width: #{$screen}) {
+        @content;
+    }
+}

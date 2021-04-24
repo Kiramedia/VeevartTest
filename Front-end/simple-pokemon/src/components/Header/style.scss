@@ -1,0 +1,43 @@
+@import "../../mixin.scss";
+
+.o-header {
+    width: 100%;
+    height: 12rem;
+    background: var(--secundary-color);
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 25% 60%, 20% 100%, 0 100%, 0 0);
+
+    .container{
+        width: 100%;
+        height: 12rem;
+        background: var(--primary-color);
+        padding: 2.75rem 2rem 2rem 2rem;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        overflow-y: hidden;
+        top: -0.75rem;
+        left: 0;
+        clip-path: polygon(50% 0%, 100% 0, 100% 60%, 25% 60%, 20% 100%, 0 100%, 0 0);
+    }
+
+    .complement{
+        height: 4rem;
+    }
+
+    @include lg{
+        clip-path: none;
+        height: 6rem;
+
+        .container{
+            clip-path: none;
+            height: 6rem;
+            padding: 1.75rem 1rem 1rem 1rem;
+        }
+
+        .complement{
+            height: 3rem;
+        }
+    }
+}

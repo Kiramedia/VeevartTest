@@ -1,0 +1,10 @@
+.o-moves{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .o-body{
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,26 @@
+@import "../../mixin.scss";
+
+.o-home{
+    width: 100vw;
+    height: 100vh;
+    background: url("../../resources/img/home-bg.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+
+    .o-logo{
+        height: auto;
+        width: 50%;
+        margin-bottom: 4rem;
+    }
+
+    @include md{
+        .o-logo{
+            width: 100%;
+            margin: 1rem;
+        }
+    }
+}

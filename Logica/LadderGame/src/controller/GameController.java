@@ -87,14 +87,13 @@ public final class GameController {
         LinkedList<BoardObject> objectsTemp = board.getObjects();
         for(int i = 0; i< objectsTemp.size(); i++){
             if(objectsTemp.get(i).getInitPosition() == playersPosition.get(actPlayer)){
+                playersPosition.set(actPlayer, objectsTemp.get(i).getFinalPosition());
                 if(objectsTemp.get(i).getType() == 0){  
                     //For ladders
-                    playersPosition.set(actPlayer, objectsTemp.get(i).getFinalPosition());
                     System.out.println("El jugador " + (actPlayer+1) + " sube por escalera al cuadro " + playersPosition.get(actPlayer));
                     break;
                 }else if(objectsTemp.get(i).getType() == 1){    
                     //For snakes
-                    playersPosition.set(actPlayer, objectsTemp.get(i).getFinalPosition());
                     System.out.println("El jugador " + (actPlayer+1) + " desciende por serpiente al cuadro " + playersPosition.get(actPlayer));
                     break;
                 }

@@ -1,0 +1,94 @@
+@import "../../mixin.scss";
+
+.o-card {
+    height: 22rem;
+    width: 22rem;
+    margin: 2rem;
+    background: var(--complementary-color);
+    position: relative;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: height 0.3s;
+
+    h1 {
+        text-align: center;
+        position: absolute;
+        top: 11rem;
+        font-size: 1.5rem;
+        opacity: 0;
+    }
+
+    a {
+        position: absolute;
+        bottom: 10.5rem;
+        font-size: 1.5rem;
+        background: var(--secundary-color);
+        padding: 0.25rem 1rem;
+        border-radius: 0.5rem;
+        color: white;
+        cursor: pointer;
+        opacity: 0;
+        text-decoration: none;
+    }
+
+    &:hover h1, &:hover a, .open{
+        animation: ease-in-out both .5s fade-in;
+    }
+
+    .open,
+    &:hover {
+        height: 35rem;
+    }
+
+    .poke-image {
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .top {
+        width: 23rem;
+        position: absolute;
+        top: -1rem;
+        left: -0.5rem;
+        z-index: 1;
+    }
+
+    .bottom {
+        width: 23rem;
+        position: absolute;
+        transform: rotateX(180deg);
+        bottom: -1rem;
+        left: -0.5rem;
+        z-index: 1;
+    }
+
+    @include md{
+        height: 18rem;
+        width: 17rem;
+
+        .top{
+            width: 18rem;
+        }
+
+        .bottom{
+            width: 18rem;
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+

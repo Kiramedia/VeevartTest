@@ -1,0 +1,21 @@
+//Global variables
+$primary-color: #ff1a55;
+$secundary-color: #49155b;
+$complementary-color: #AEE2F0;
+$button-color: #3A5598;
+
+//Configuration all css items
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Pokemon GB', sans-serif; 
+}
+
+//Root elements
+:root {
+    --primary-color: #{$primary-color};
+    --secundary-color: #{$secundary-color};
+    --complementary-color: #{$complementary-color};
+    --button-color: #{$button-color};
+}
